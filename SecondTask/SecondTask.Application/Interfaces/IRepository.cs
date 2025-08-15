@@ -13,7 +13,7 @@ namespace SecondTask.Application.Interfaces
         Task<T> GetByIdAsync(int id);
         Task CreateAsync(T t);
         Task UpdateAsync(T t);
-        Task DeleteAsync(T t);
+        Task RemoveAsync(T t);
         Task<T>? GetByFilterAsync(Expression<Func<T, bool>> filter);
     }
 }

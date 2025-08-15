@@ -7,14 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SecondTask.Domain\SecondTask.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.8" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.58" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRS\Commands\" />
-    <Folder Include="Features\CQRS\Handlers\" />
-    <Folder Include="Features\CQRS\Results\" />
-    <Folder Include="Features\CQRS\Queries\" />
+    <ProjectReference Include="..\SecondTask.Domain\SecondTask.Domain.csproj" />
   </ItemGroup>
 
 </Project>

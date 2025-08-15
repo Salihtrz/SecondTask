@@ -25,7 +25,7 @@ namespace SecondTask.Persistence.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(T t)
+        public async Task RemoveAsync(T t)
         {
             _context.Set<T>().Remove(t);
             await _context.SaveChangesAsync();

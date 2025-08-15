@@ -1,5 +1,9 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using SecondTask.Application.Features.CQRS.Handlers.ProductHandlers;
+using SecondTask.Application.Interfaces;
 using SecondTask.Persistence.Context;
+using SecondTask.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,16 +16,25 @@ builder.Services.AddDbContext<context>(options =>
     options.UseNpgsql(connectionString);
 });
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddScoped<GetProductByIdQueryHandler>();
+builder.Services.AddScoped<GetProductQueryHandler>();
+builder.Services.AddScoped<CreateProductCommandHandler>();
+builder.Services.AddScoped<UpdateProductCommandHandler>();
+builder.Services.AddScoped<RemoveProductCommandHandler>();
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

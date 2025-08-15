@@ -55,6 +55,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.58, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -314,7 +320,7 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
-            "Swashbuckle.AspNetCore.Swagger": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.3, )"
             }

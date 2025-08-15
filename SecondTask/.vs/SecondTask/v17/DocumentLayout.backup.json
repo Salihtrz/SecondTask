@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|solutionrelative:secondtask.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CFF71E4-BF93-4748-8208-193EE712CD33}|SecondTask.Domain\\SecondTask.Domain.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CFF71E4-BF93-4748-8208-193EE712CD33}|SecondTask.Domain\\SecondTask.Domain.csproj|solutionrelative:secondtask.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD8BF54E-B050-4745-86A0-A87C0F90290B}|SecondTask.Persistence\\SecondTask.Persistence.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8BF54E-B050-4745-86A0-A87C0F90290B}|SecondTask.Persistence\\SecondTask.Persistence.csproj|solutionrelative:secondtask.persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\features\\cqrs\\handlers\\producthandlers\\removeproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\features\\cqrs\\handlers\\producthandlers\\removeproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|solutionrelative:secondtask.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250814203045_create_database_and_tables.cs",
-              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs",
-              "RelativeDocumentMoniker": "SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs",
-              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs",
-              "RelativeToolTip": "SecondTask.Persistence\\Migrations\\20250814203045_create_database_and_tables.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RemoveProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\RemoveProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\RemoveProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\RemoveProductCommandHandler.cs",
+              "RelativeToolTip": "SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\RemoveProductCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T20:30:46.195Z",
+              "WhenOpened": "2025-08-14T21:34:34.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "SecondTask.Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "SecondTask.Domain\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Persistence\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "SecondTask.Persistence\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Persistence\\Repositories\\Repository.cs",
+              "RelativeToolTip": "SecondTask.Persistence\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:39:47.607Z",
+              "WhenOpened": "2025-08-14T21:33:51.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "SecondTask.Application\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T21:33:28.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "SecondTask.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Program.cs",
+              "RelativeToolTip": "SecondTask.WebApi\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T21:26:34.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T21:17:47.887Z",
               "EditorCaption": ""
             }
           ]
