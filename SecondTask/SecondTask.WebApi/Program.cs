@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using SecondTask.Application.Features.CQRS.Handlers.ProductHandlers;
+using SecondTask.Application.Features.CQRS.Handlers.UserHandlers;
 using SecondTask.Application.Interfaces;
 using SecondTask.Persistence.Context;
 using SecondTask.Persistence.Repositories;
@@ -23,6 +24,9 @@ builder.Services.AddScoped<GetProductQueryHandler>();
 builder.Services.AddScoped<CreateProductCommandHandler>();
 builder.Services.AddScoped<UpdateProductCommandHandler>();
 builder.Services.AddScoped<RemoveProductCommandHandler>();
+
+builder.Services.AddScoped<CreateUserCommandHandler>();
+builder.Services.AddScoped<GetCheckUserQueryHandler>();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = "localhost:6380";

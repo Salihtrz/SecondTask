@@ -72,5 +72,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SecondTask.WebApi.Controllers.RegisterController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "SecondTask.Application.Features.CQRS.Commands.UserCommands.CreateUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

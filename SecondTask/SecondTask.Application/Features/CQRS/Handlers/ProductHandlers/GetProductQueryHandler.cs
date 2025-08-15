@@ -24,12 +24,12 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
             var cachedData = await _cache.GetStringAsync(cacheKey);
             if(!string.IsNullOrEmpty(cachedData))
             {
-                Console.WriteLine("CACHE HIT: Ürün listesi Redis'ten geldi.");
+                //Console.WriteLine("CACHE HIT: Ürün listesi Redis'ten geldi.");
                 result = JsonConvert.DeserializeObject<List<GetProductQueryResult>>(cachedData);
                 return result;
             }
 
-            Console.WriteLine("CACHE MISS: Ürün listesi veritabanından çekildi.");
+            //Console.WriteLine("CACHE MISS: Ürün listesi veritabanından çekildi.");
             var values = await _repository.GetAllAsync();
             result = values.Select(x => new GetProductQueryResult
             {
