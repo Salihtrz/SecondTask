@@ -140,3 +140,7 @@ C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\S
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\obj\Debug\net9.0\ref\SecondTask.WebApi.dll
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\StackExchange.Redis.dll
