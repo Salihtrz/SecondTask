@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562A66-DAA9-4E1A-B756-55AD8841CBD9}|SecondTask.WebApi\\SecondTask.WebApi.csproj|solutionrelative:secondtask.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F61307-AB34-4A36-BB49-A9E47E5E5AB5}|SecondTask.WebUI\\SecondTask.WebUI.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F61307-AB34-4A36-BB49-A9E47E5E5AB5}|SecondTask.WebUI\\SecondTask.WebUI.csproj|solutionrelative:secondtask.webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\globalexceptions\\model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\globalexceptions\\model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\globalexceptions\\exceptions\\someexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\globalexceptions\\exceptions\\someexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\globalexceptions\\exceptions\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\globalexceptions\\exceptions\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\secondtask\\secondtask.application\\features\\cqrs\\handlers\\producthandlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D957A8E6-124A-4242-B20D-63CA1F96B458}|SecondTask.Application\\SecondTask.Application.csproj|solutionrelative:secondtask.application\\features\\cqrs\\handlers\\producthandlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetProductByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\GetProductByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\GetProductByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\GetProductByIdQueryHandler.cs",
+              "RelativeToolTip": "SecondTask.Application\\Features\\CQRS\\Handlers\\ProductHandlers\\GetProductByIdQueryHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswCAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T12:12:04.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Exceptions\\ErrorHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\GlobalExceptions\\Exceptions\\ErrorHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Exceptions\\ErrorHandlerMiddleware.cs",
+              "RelativeToolTip": "SecondTask.Application\\GlobalExceptions\\Exceptions\\ErrorHandlerMiddleware.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T12:10:35.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SomeException.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Exceptions\\SomeException.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\GlobalExceptions\\Exceptions\\SomeException.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Exceptions\\SomeException.cs",
+              "RelativeToolTip": "SecondTask.Application\\GlobalExceptions\\Exceptions\\SomeException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T12:10:05.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Model\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "SecondTask.Application\\GlobalExceptions\\Model\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\GlobalExceptions\\Model\\ApiResponse.cs",
+              "RelativeToolTip": "SecondTask.Application\\GlobalExceptions\\Model\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T12:09:04.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwHkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T10:54:50.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "SecondTask.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\SecondTask\\SecondTask.WebApi\\Program.cs",
+              "RelativeToolTip": "SecondTask.WebApi\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAADsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T10:50:12.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
