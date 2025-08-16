@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using SecondTask.Application.Features.CQRS.Results.ProductResults;
+using SecondTask.Application.GlobalExceptions.Exceptions;
 using SecondTask.Application.Interfaces;
 using SecondTask.Domain.Entities;
 
@@ -31,6 +32,10 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
 
             //Console.WriteLine("CACHE MISS: Ürün listesi veritabanından çekildi.");
             var values = await _repository.GetAllAsync();
+            if(values == null)
+            {
+                throw new SomeException($"Products is Not Found");
+            }
             result = values
                 .OrderBy(x => x.Id)
                 .Select(x => new GetProductQueryResult

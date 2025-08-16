@@ -12,14 +12,22 @@ namespace SecondTask.WebUI.Controllers
     public class ProductController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ILogger<ProductController> _logger;
 
-        public ProductController(IHttpClientFactory httpClientFactory)
+        public ProductController(IHttpClientFactory httpClientFactory, ILogger<ProductController> logger)
         {
             _httpClientFactory = httpClientFactory;
+            _logger = logger;
+        }
+        [HttpGet]
+        public IActionResult Test()
+        {
+            throw new Exception("Hata Mesajı");
         }
         [HttpGet]
         public async Task<IActionResult> Index(ResultProductDto resultProductDto)
         {
+            _logger.LogInformation("Products Listed:" + DateTime.Now);
             var username = User.FindFirst("Username")?.Value;
             ViewBag.Username = username;
             var client = _httpClientFactory.CreateClient();
@@ -38,6 +46,7 @@ namespace SecondTask.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> ProductDetails(int id)
         {
+            _logger.LogInformation("Product Listed:" + DateTime.Now);
             var username = User.FindFirst("Username")?.Value;
             ViewBag.Username = username;
             var client = _httpClientFactory.CreateClient();
@@ -63,6 +72,7 @@ namespace SecondTask.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateProduct(CreateProductDto createProductDto)
         {
+            _logger.LogInformation("Product Created:" + DateTime.Now);
             createProductDto.Status = true;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createProductDto);
@@ -98,6 +108,7 @@ namespace SecondTask.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto)
         {
+            _logger.LogInformation("Product Updated:" + DateTime.Now);
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateProductDto);
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
@@ -113,6 +124,7 @@ namespace SecondTask.WebUI.Controllers
         }
         public async Task<IActionResult> DeleteProduct(int id)
         {
+            _logger.LogInformation("Product Deleted:" + DateTime.Now);
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync("https://localhost:7109/api/Product/" + id);
             if (responseMessage.IsSuccessStatusCode)

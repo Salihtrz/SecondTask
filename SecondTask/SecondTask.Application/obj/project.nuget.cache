@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ATs9amDibPM=",
+  "dgSpecHash": "daV8Ibtkxjs=",
   "success": true,
   "projectFilePath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\Proje ve Çalışmalarım\\GitHub\\SecondTask\\SecondTask\\SecondTask.Application\\SecondTask.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muazc\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\muazc\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\muazc\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\muazc\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.8\\microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
     "C:\\Users\\muazc\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\9.0.8\\microsoft.extensions.caching.stackexchangeredis.9.0.8.nupkg.sha512",
     "C:\\Users\\muazc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
@@ -20,7 +22,8 @@
     "C:\\Users\\muazc\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\muazc\\.nuget\\packages\\stackexchange.redis\\2.8.58\\stackexchange.redis.2.8.58.nupkg.sha512",
     "C:\\Users\\muazc\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.13.1\\system.identitymodel.tokens.jwt.8.13.1.nupkg.sha512",
-    "C:\\Users\\muazc\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+    "C:\\Users\\muazc\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\muazc\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

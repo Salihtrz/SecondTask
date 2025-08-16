@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using SecondTask.Application.Features.CQRS.Queries.ProductQueries;
 using SecondTask.Application.Features.CQRS.Results.ProductResults;
+using SecondTask.Application.GlobalExceptions.Exceptions;
 using SecondTask.Application.Interfaces;
 using SecondTask.Domain.Entities;
 
@@ -30,6 +31,10 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
             }
             //Console.WriteLine($"CACHE MISS: Ürün {query.Id} veritabanından çekildi.");
             var values = await _repository.GetByIdAsync(query.Id);
+            if (values == null)
+            {
+                throw new SomeException($"Id no : {query.Id} Product is Not Found");
+            }
             result = new GetProductByIdQueryResult
             {
                 Brand = values.Brand,
