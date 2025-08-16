@@ -1,0 +1,12 @@
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\bin\Debug\net9.0\SecondTask.Domain.deps.json
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\bin\Debug\net9.0\SecondTask.Domain.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\bin\Debug\net9.0\SecondTask.Domain.pdb
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.AssemblyInfoInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.AssemblyInfo.cs
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.csproj.CoreCompileInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.sourcelink.json
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\refint\SecondTask.Domain.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\SecondTask.Domain.pdb
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Domain\obj\Debug\net9.0\ref\SecondTask.Domain.dll

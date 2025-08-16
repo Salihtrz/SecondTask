@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "All",
+    "Projects": [
+      {
+        "Path": "SecondTask.WebUI\\SecondTask.WebUI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SecondTask.WebApi\\SecondTask.WebApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
