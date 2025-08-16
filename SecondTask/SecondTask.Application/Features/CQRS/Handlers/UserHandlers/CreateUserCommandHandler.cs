@@ -1,4 +1,5 @@
-﻿using SecondTask.Application.Features.CQRS.Commands.UserCommands;
+﻿using BCrypt.Net;
+using SecondTask.Application.Features.CQRS.Commands.UserCommands;
 using SecondTask.Application.Interfaces;
 using SecondTask.Domain.Entities;
 
@@ -17,7 +18,7 @@ namespace SecondTask.Application.Features.CQRS.Handlers.UserHandlers
             await _repository.CreateAsync(new User
             {
                 Name = command.Name,
-                Password = command.Password,
+                Password = BCrypt.Net.BCrypt.HashPassword(command.Password),
                 Surname = command.Surname,
                 Username = command.Username
             });

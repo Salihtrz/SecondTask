@@ -1,4 +1,5 @@
-﻿using SecondTask.Application.Features.CQRS.Queries.UserQueries;
+﻿using BCrypt.Net;
+using SecondTask.Application.Features.CQRS.Queries.UserQueries;
 using SecondTask.Application.Features.CQRS.Results.UserResults;
 using SecondTask.Application.Interfaces;
 using SecondTask.Domain.Entities;
@@ -21,13 +22,19 @@ namespace SecondTask.Application.Features.CQRS.Handlers.UserHandlers
         public async Task<GetCheckUserQueryResult> Handle(GetCheckUserQuery query)
         {
             var values = new GetCheckUserQueryResult();
-            var user = await _repository.GetByFilterAsync(x => x.Username == query.Username && x.Password == query.Password);
-            if (user != null)
+            var user = await _repository.GetByFilterAsync(x => x.Username == query.Username);
+            bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(query.Password, user.Password);
+            if (user != null && isPasswordCorrect)
             {
                 values.Id = user.Id;
                 values.Surname = user.Surname;
                 values.Name = user.Name;
                 values.Username = user.Username;
+                values.IsExists = true;
+            }
+            else
+            {
+                values.IsExists = false;
             }
             return values;
         }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 using SecondTask.Application.Features.CQRS.Commands.ProductCommands;
+using SecondTask.Application.Features.CQRS.Results.ProductResults;
 using SecondTask.Application.Interfaces;
 using SecondTask.Domain.Entities;
 
@@ -25,6 +27,7 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
             values.Brand = command.Brand;
             await _repository.UpdateAsync(values);
             await _cache.RemoveAsync("getProductList");
+            await _cache.RemoveAsync($"getProductById:{command.Id}");
         }
     }
 }

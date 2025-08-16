@@ -8910,7 +8910,7 @@ h2#video-title {
 }
 
 .login-page {
-  background-image: url(/Watchly/images/BigNatureImage.png);
+  background-image: url(/LoginRegister/images/BigNatureImage.png);
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -8924,33 +8924,33 @@ h2#video-title {
 }
 
 .register-page {
-  background-image: url(/Watchly/images/BigNatureImage.png);
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url(/LoginRegister/images/BigNatureImage.png);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-box {
-  background-image: url(/Watchly/images/SmallNatureImage.png);
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 48px;
-  width: 800px;
-  display: flex;
+    background-image: url(/LoginRegister/images/SmallNatureImage.png);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    width: 800px;
+    display: flex;
 }
 
 .login-image {
-  background-image: url(/Watchly/images/animal.png);
-  width: 55%;
-  z-index: 0;
-  margin-top: 75px;
+    background-image: url(/LoginRegister/images/animal.png);
+    width: 55%;
+    z-index: 0;
+    margin-top: 75px;
 }
 
 .login-page .login-image {

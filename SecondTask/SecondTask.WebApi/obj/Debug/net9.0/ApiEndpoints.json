@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "SecondTask.WebApi.Controllers.LoginController",
+    "Method": "Index",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SecondTask.WebApi.Controllers.ProductController",
     "Method": "GetProductList",
     "RelativePath": "api/Product",

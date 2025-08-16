@@ -20,6 +20,7 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
             var value = await _repository.GetByIdAsync(command.Id);
             await _repository.RemoveAsync(value);
             await _cache.RemoveAsync("getProductList");
+            await _cache.RemoveAsync($"getProductById:{command.Id}");
         }
     }
 }

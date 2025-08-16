@@ -31,7 +31,9 @@ namespace SecondTask.Application.Features.CQRS.Handlers.ProductHandlers
 
             //Console.WriteLine("CACHE MISS: Ürün listesi veritabanından çekildi.");
             var values = await _repository.GetAllAsync();
-            result = values.Select(x => new GetProductQueryResult
+            result = values
+                .OrderBy(x => x.Id)
+                .Select(x => new GetProductQueryResult
             {
                 Brand = x.Brand,
                 Description = x.Description,

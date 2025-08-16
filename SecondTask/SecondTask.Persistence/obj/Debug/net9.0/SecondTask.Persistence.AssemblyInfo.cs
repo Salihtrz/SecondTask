@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SecondTask.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0036b5043de8f1720d2d7597b0fbf02df95edbc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f096e061eecf14f23b08964f9b534dc5b423f57")]
 [assembly: System.Reflection.AssemblyProductAttribute("SecondTask.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SecondTask.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

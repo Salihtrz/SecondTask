@@ -88,23 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
-
-  // Form gönderimi
-  if (loginForm) {
-      loginForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          const email = document.getElementById('email').value;
-          const password = passwordInput.value;
-          const remember = document.getElementById('remember').checked;
-
-          // Burada API'ye istek atılacak
-          console.log('Login attempt:', { email, password, remember });
-          
-          // Başarılı giriş sonrası yönlendirme
-          window.location.href = '/Watchly/UI/channel.html';
-      });
-  }
 }); 
 
 // Yorum textarea'sı için otomatik yükseklik ayarı
