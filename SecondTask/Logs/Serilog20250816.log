@@ -1,0 +1,1118 @@
+[2025-08-16 14:27:22.291 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 14:27:22.527 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 14:27:22.527 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 14:27:22.615 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 14:27:22.615 +03:00  INF]  Hosting environment: Development
+[2025-08-16 14:27:22.615 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 14:27:23.874 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 14:27:24.433 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 560.1129ms
+[2025-08-16 14:27:24.451 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 14:27:28.795 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 14:27:28.799 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:27:28.822 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 14:27:29.928 +03:00  INF]  Executed DbCommand (52ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 14:27:30.304 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 14:27:30.319 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1493.1509ms
+[2025-08-16 14:27:30.319 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:27:30.327 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 1532.2986ms
+[2025-08-16 14:27:30.463 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 14:27:30.467 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:27:30.471 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:27:30.767 +03:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 14:27:30.875 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 14:27:30.881 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 410.387ms
+[2025-08-16 14:27:30.882 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:27:30.882 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 418.907ms
+[2025-08-16 14:28:40.604 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 14:28:40.869 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 14:28:40.870 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 14:28:40.956 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 14:28:40.957 +03:00  INF]  Hosting environment: Development
+[2025-08-16 14:28:40.957 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 14:28:41.866 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 14:28:42.347 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 482.6564ms
+[2025-08-16 14:28:42.360 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 14:28:47.747 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 14:28:47.753 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:28:47.780 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 14:28:48.901 +03:00  INF]  Executed DbCommand (52ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 14:28:49.287 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 14:28:49.301 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1518.0302ms
+[2025-08-16 14:28:49.301 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:28:49.310 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 1562.8489ms
+[2025-08-16 14:28:49.444 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 14:28:49.447 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:28:49.451 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:28:49.782 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 14:28:49.788 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 337.2137ms
+[2025-08-16 14:28:49.788 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:28:49.788 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 344.1836ms
+[2025-08-16 14:33:48.591 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 14:33:49.083 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 14:33:49.083 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 14:33:49.441 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 14:33:49.441 +03:00  INF]  Hosting environment: Development
+[2025-08-16 14:33:49.442 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 14:33:49.864 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 14:33:50.246 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 388.9435ms
+[2025-08-16 14:33:50.259 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 14:33:55.023 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 14:33:55.027 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:33:55.050 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 14:33:56.187 +03:00  INF]  Executed DbCommand (49ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 14:33:56.537 +03:00  INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2025-08-16 14:33:56.544 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1491.0692ms
+[2025-08-16 14:33:56.545 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:33:56.554 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 400 null text/plain; charset=utf-8 1530.3752ms
+[2025-08-16 14:33:58.659 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 14:33:58.663 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:33:58.663 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 14:33:58.713 +03:00  INF]  Executed DbCommand (4ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 14:33:58.985 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 14:33:58.995 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 331.6625ms
+[2025-08-16 14:33:58.995 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:33:58.995 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 336.3046ms
+[2025-08-16 14:33:59.120 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 14:33:59.120 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:33:59.124 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:33:59.391 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 14:33:59.491 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 14:33:59.497 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 373.6332ms
+[2025-08-16 14:33:59.497 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:33:59.498 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 377.9459ms
+[2025-08-16 14:40:28.208 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 14:40:28.601 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 14:40:28.602 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 14:40:28.733 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 14:40:28.734 +03:00  INF]  Hosting environment: Development
+[2025-08-16 14:40:28.734 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 14:40:29.359 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 14:40:29.691 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 334.5232ms
+[2025-08-16 14:40:29.707 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 14:40:35.003 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 14:40:35.007 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:40:35.029 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 14:40:36.526 +03:00  INF]  Executed DbCommand (56ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 14:40:36.980 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 14:40:37.004 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1970.2576ms
+[2025-08-16 14:40:37.005 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 14:40:37.017 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 2013.7187ms
+[2025-08-16 14:40:37.190 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 14:40:37.195 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:40:37.198 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:40:37.537 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 14:40:37.548 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 348.9476ms
+[2025-08-16 14:40:37.548 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:40:37.548 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 358.0839ms
+[2025-08-16 14:40:48.745 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/9 - null null
+[2025-08-16 14:40:48.746 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:40:48.752 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:40:48.800 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 14:40:48.801 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 49.0469ms
+[2025-08-16 14:40:48.802 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:40:48.802 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/9 - 200 null application/json; charset=utf-8 56.1879ms
+[2025-08-16 14:41:04.702 +03:00  INF]  Request starting HTTP/1.1 PUT https://localhost:7109/api/Product - application/json; charset=utf-8 96
+[2025-08-16 14:41:04.702 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 14:41:04.706 +03:00  INF]  Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SecondTask.Application.Features.CQRS.Commands.ProductCommands.UpdateProductCommand) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:41:04.793 +03:00  INF]  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 14:41:04.893 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = Decimal), @p3='?', @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Brand" = @p0, "Description" = @p1, "Price" = @p2, "ProductName" = @p3, "Status" = @p4
+WHERE "Id" = @p5;
+[2025-08-16 14:41:04.912 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2025-08-16 14:41:04.913 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi) in 206.401ms
+[2025-08-16 14:41:04.913 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 14:41:04.913 +03:00  INF]  Request finished HTTP/1.1 PUT https://localhost:7109/api/Product - 200 null text/plain; charset=utf-8 211.0078ms
+[2025-08-16 14:41:04.931 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 14:41:04.932 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:41:04.932 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:41:04.958 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 14:41:04.986 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 14:41:04.986 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 54.4783ms
+[2025-08-16 14:41:04.986 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:41:04.987 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 55.3862ms
+[2025-08-16 14:41:28.278 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/9 - null null
+[2025-08-16 14:41:28.309 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:41:28.309 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 14:41:28.316 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 14:41:28.320 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 14:41:28.320 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 10.6437ms
+[2025-08-16 14:41:28.320 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 14:41:28.320 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/9 - 200 null application/json; charset=utf-8 43.3879ms
+[2025-08-16 15:14:22.873 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 15:14:23.163 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 15:14:23.164 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 15:14:23.264 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 15:14:23.264 +03:00  INF]  Hosting environment: Development
+[2025-08-16 15:14:23.264 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 15:14:23.685 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 15:14:23.935 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 252.0041ms
+[2025-08-16 15:14:23.945 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 15:14:28.300 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 15:14:28.304 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 15:14:28.326 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 15:14:29.934 +03:00  INF]  Executed DbCommand (50ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 15:14:30.316 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 15:14:30.329 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 2000.5835ms
+[2025-08-16 15:14:30.330 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 15:14:30.339 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 2038.9617ms
+[2025-08-16 15:14:30.493 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:14:30.496 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:14:30.499 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:14:30.897 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:14:31.014 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:14:31.021 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 521.6941ms
+[2025-08-16 15:14:31.021 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:14:31.021 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 528.1975ms
+[2025-08-16 15:14:41.566 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+[2025-08-16 15:14:41.582 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 15.1949ms
+[2025-08-16 15:14:41.673 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+[2025-08-16 15:14:41.703 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.1052ms
+[2025-08-16 15:14:41.916 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+[2025-08-16 15:14:41.931 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.7818ms
+[2025-08-16 15:14:51.041 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:14:51.041 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:14:51.047 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:14:51.107 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:15:00.452 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 9405.0872ms
+[2025-08-16 15:15:00.454 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:15:00.457 +03:00  ERR]  An unhandled exception has occurred while executing the request.
+SecondTask.Application.GlobalExceptions.Exceptions.SomeException: Product is Not Found
+   at SecondTask.Application.Features.CQRS.Handlers.ProductHandlers.GetProductByIdQueryHandler.Handle(GetProductByIdQuery query) in C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.Application\Features\CQRS\Handlers\ProductHandlers\GetProductByIdQueryHandler.cs:line 56
+   at SecondTask.WebApi.Controllers.ProductController.GetProductList(Int32 id) in C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-08-16 15:15:01.683 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 500 null text/plain; charset=utf-8 10642.4671ms
+[2025-08-16 15:17:04.695 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 15:17:05.030 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 15:17:05.031 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 15:17:05.124 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 15:17:05.124 +03:00  INF]  Hosting environment: Development
+[2025-08-16 15:17:05.125 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 15:17:05.868 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 15:17:06.300 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 435.5278ms
+[2025-08-16 15:17:06.314 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 15:17:08.069 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+[2025-08-16 15:17:08.085 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 15.557ms
+[2025-08-16 15:17:08.176 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+[2025-08-16 15:17:08.218 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.7326ms
+[2025-08-16 15:17:08.415 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+[2025-08-16 15:17:08.452 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.0844ms
+[2025-08-16 15:17:12.043 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:17:12.068 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:17:12.100 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:17:12.560 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:17:12.574 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 470.278ms
+[2025-08-16 15:17:12.575 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:17:12.578 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 534.4228ms
+[2025-08-16 15:17:47.453 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:17:47.490 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:17:47.490 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:17:47.502 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:17:47.502 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 11.9906ms
+[2025-08-16 15:17:47.502 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:17:47.502 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 49.6186ms
+[2025-08-16 15:18:07.159 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:18:07.160 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:18:07.160 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:18:10.462 +03:00  INF]  Executed DbCommand (53ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:18:19.338 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 12178.5234ms
+[2025-08-16 15:18:19.339 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:18:19.462 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 12303.1664ms
+[2025-08-16 15:20:39.351 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 15:20:39.483 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 15:20:39.483 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 15:20:39.551 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 15:20:39.551 +03:00  INF]  Hosting environment: Development
+[2025-08-16 15:20:39.551 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 15:20:40.029 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 15:20:40.140 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 114.2668ms
+[2025-08-16 15:20:40.150 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 15:20:42.033 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+[2025-08-16 15:20:42.040 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 7.3118ms
+[2025-08-16 15:20:42.123 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+[2025-08-16 15:20:42.148 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.6221ms
+[2025-08-16 15:20:42.326 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+[2025-08-16 15:20:42.335 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2342ms
+[2025-08-16 15:20:46.496 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:46.510 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:46.536 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:46.815 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:46.831 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 290.7968ms
+[2025-08-16 15:20:46.831 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:46.834 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 337.2437ms
+[2025-08-16 15:20:49.117 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:49.119 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.120 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:49.130 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:49.130 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 10.2776ms
+[2025-08-16 15:20:49.130 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.130 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 13.506ms
+[2025-08-16 15:20:49.569 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:49.569 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.569 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:49.577 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:49.577 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 7.6117ms
+[2025-08-16 15:20:49.577 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.577 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 8.3589ms
+[2025-08-16 15:20:49.748 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:49.748 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.749 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:49.751 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:49.752 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.7516ms
+[2025-08-16 15:20:49.752 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.752 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 4.0874ms
+[2025-08-16 15:20:49.911 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:49.911 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.912 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:49.914 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:49.914 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.431ms
+[2025-08-16 15:20:49.914 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:49.914 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.0815ms
+[2025-08-16 15:20:50.080 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:50.080 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.081 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:50.083 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:50.083 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.4273ms
+[2025-08-16 15:20:50.083 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.083 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.9867ms
+[2025-08-16 15:20:50.243 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:50.243 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.243 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:50.245 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:50.246 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.473ms
+[2025-08-16 15:20:50.246 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.246 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.0101ms
+[2025-08-16 15:20:50.412 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:50.412 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.412 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:50.414 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:50.415 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.3523ms
+[2025-08-16 15:20:50.415 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.415 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.8609ms
+[2025-08-16 15:20:50.552 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:50.553 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.554 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:50.556 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:50.556 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.869ms
+[2025-08-16 15:20:50.557 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:50.557 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 4.8716ms
+[2025-08-16 15:20:51.203 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+[2025-08-16 15:20:51.256 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 52.193ms
+[2025-08-16 15:20:51.294 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+[2025-08-16 15:20:51.295 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+[2025-08-16 15:20:51.296 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 0.3778ms
+[2025-08-16 15:20:51.304 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.562ms
+[2025-08-16 15:20:51.410 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+[2025-08-16 15:20:51.415 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.0436ms
+[2025-08-16 15:20:51.437 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/favicon-32x32.png - null null
+[2025-08-16 15:20:51.449 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/favicon-32x32.png - 200 628 image/png 11.5182ms
+[2025-08-16 15:20:55.363 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:20:55.363 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:55.363 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:20:55.366 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:20:55.366 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.7277ms
+[2025-08-16 15:20:55.366 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:55.366 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.4259ms
+[2025-08-16 15:20:59.954 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:20:59.955 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:20:59.959 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:00.616 +03:00  INF]  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:21:00.705 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 745.9449ms
+[2025-08-16 15:21:00.705 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:00.710 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 755.8075ms
+[2025-08-16 15:21:05.787 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:05.787 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:05.787 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:05.790 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:05.790 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.5922ms
+[2025-08-16 15:21:05.790 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:05.790 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.1864ms
+[2025-08-16 15:21:24.314 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:24.314 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:24.315 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:24.444 +03:00  INF]  Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:21:24.448 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 133.627ms
+[2025-08-16 15:21:24.448 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:24.449 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 135.243ms
+[2025-08-16 15:21:26.698 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:26.699 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:26.699 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:26.701 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:26.701 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.4002ms
+[2025-08-16 15:21:26.701 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:26.701 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.8982ms
+[2025-08-16 15:21:27.883 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:27.883 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:27.883 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:27.886 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:27.886 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.5134ms
+[2025-08-16 15:21:27.886 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:27.886 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.0627ms
+[2025-08-16 15:21:28.352 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:28.352 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:28.353 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:28.356 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:28.356 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.5036ms
+[2025-08-16 15:21:28.356 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:28.357 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 5.365ms
+[2025-08-16 15:21:28.697 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:28.698 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:28.698 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:28.700 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:28.700 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.2509ms
+[2025-08-16 15:21:28.700 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:28.700 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.844ms
+[2025-08-16 15:21:29.155 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:29.155 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.156 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:29.158 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:29.158 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.4421ms
+[2025-08-16 15:21:29.158 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.158 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 3.1762ms
+[2025-08-16 15:21:29.318 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:29.318 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.319 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:29.322 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:29.322 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.3029ms
+[2025-08-16 15:21:29.322 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.322 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 4.5112ms
+[2025-08-16 15:21:29.667 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:29.667 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.667 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:29.669 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:29.669 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.3748ms
+[2025-08-16 15:21:29.670 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.670 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.8929ms
+[2025-08-16 15:21:29.930 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:21:29.930 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.930 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:29.932 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 15:21:29.933 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.1746ms
+[2025-08-16 15:21:29.933 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:29.933 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 2.5672ms
+[2025-08-16 15:21:32.418 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:32.419 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:32.419 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:32.424 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:32.426 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 6.9952ms
+[2025-08-16 15:21:32.426 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:32.426 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 7.4707ms
+[2025-08-16 15:21:39.433 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:39.434 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:39.434 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:39.436 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:39.436 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.1613ms
+[2025-08-16 15:21:39.436 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:39.436 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.7863ms
+[2025-08-16 15:21:41.374 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:41.375 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:41.375 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:41.377 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:41.377 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.5134ms
+[2025-08-16 15:21:41.377 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:41.378 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.0686ms
+[2025-08-16 15:21:41.796 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:41.796 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:41.796 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:41.798 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:41.798 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.4078ms
+[2025-08-16 15:21:41.799 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:41.799 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.9003ms
+[2025-08-16 15:21:42.163 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:42.163 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.163 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:42.165 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:42.166 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.3771ms
+[2025-08-16 15:21:42.166 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.166 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.8665ms
+[2025-08-16 15:21:42.354 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:42.354 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.354 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:42.357 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:42.357 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.8914ms
+[2025-08-16 15:21:42.357 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.357 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.3739ms
+[2025-08-16 15:21:42.676 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:42.676 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.676 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:42.679 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:42.679 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.5195ms
+[2025-08-16 15:21:42.679 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.679 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.1427ms
+[2025-08-16 15:21:42.976 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:42.977 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.977 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:42.979 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:42.980 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.8113ms
+[2025-08-16 15:21:42.980 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:42.980 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.3991ms
+[2025-08-16 15:21:43.155 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:43.155 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.155 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:43.157 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:43.158 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.2502ms
+[2025-08-16 15:21:43.158 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.158 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.6265ms
+[2025-08-16 15:21:43.466 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:43.467 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.467 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:43.471 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:43.471 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.778ms
+[2025-08-16 15:21:43.471 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.471 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 4.3408ms
+[2025-08-16 15:21:43.747 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:43.747 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.747 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:43.749 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:43.750 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.2335ms
+[2025-08-16 15:21:43.750 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:43.750 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.6571ms
+[2025-08-16 15:21:44.042 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:44.042 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.042 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:44.044 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:44.045 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.318ms
+[2025-08-16 15:21:44.045 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.045 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.7354ms
+[2025-08-16 15:21:44.309 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:44.309 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.309 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:44.312 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:44.312 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.8401ms
+[2025-08-16 15:21:44.312 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.312 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.2693ms
+[2025-08-16 15:21:44.573 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:44.573 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.573 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:44.575 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:44.575 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 1.9408ms
+[2025-08-16 15:21:44.575 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.575 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.3034ms
+[2025-08-16 15:21:44.815 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:44.815 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.815 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:44.817 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:44.817 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.0643ms
+[2025-08-16 15:21:44.817 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:44.817 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.4306ms
+[2025-08-16 15:21:45.062 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:45.062 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.062 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:45.064 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:45.064 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 1.7475ms
+[2025-08-16 15:21:45.064 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.064 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.0315ms
+[2025-08-16 15:21:45.291 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:45.291 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.291 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:45.293 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:45.293 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.2677ms
+[2025-08-16 15:21:45.293 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.293 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.6223ms
+[2025-08-16 15:21:45.500 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:45.500 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.500 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:45.502 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:45.502 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.3961ms
+[2025-08-16 15:21:45.502 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.502 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.763ms
+[2025-08-16 15:21:45.682 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:45.682 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.682 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:45.685 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:45.685 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.6163ms
+[2025-08-16 15:21:45.685 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.685 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 3.1922ms
+[2025-08-16 15:21:45.866 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:45.866 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.866 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:45.868 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:45.869 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.3506ms
+[2025-08-16 15:21:45.869 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:45.869 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.7592ms
+[2025-08-16 15:21:46.052 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:46.052 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.052 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:46.054 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:46.054 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.0293ms
+[2025-08-16 15:21:46.054 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.054 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.3985ms
+[2025-08-16 15:21:46.237 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:46.237 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.237 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:46.239 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:46.239 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.0399ms
+[2025-08-16 15:21:46.239 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.239 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.4094ms
+[2025-08-16 15:21:46.402 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:46.402 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.402 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:46.404 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:46.404 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.107ms
+[2025-08-16 15:21:46.404 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.404 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.5044ms
+[2025-08-16 15:21:46.563 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:21:46.563 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.563 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:21:46.565 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 15:21:46.565 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 2.0446ms
+[2025-08-16 15:21:46.565 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:21:46.565 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 2.3077ms
+[2025-08-16 15:25:21.171 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 15:25:21.297 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 15:25:21.297 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 15:25:21.363 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 15:25:21.363 +03:00  INF]  Hosting environment: Development
+[2025-08-16 15:25:21.363 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 15:25:21.975 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 15:25:22.096 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 122.9252ms
+[2025-08-16 15:25:22.109 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 15:25:24.659 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+[2025-08-16 15:25:24.670 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 10.099ms
+[2025-08-16 15:25:24.754 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+[2025-08-16 15:25:24.778 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.1092ms
+[2025-08-16 15:25:24.970 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+[2025-08-16 15:25:24.979 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2319ms
+[2025-08-16 15:25:27.870 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:27.878 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:27.898 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:28.708 +03:00  INF]  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:28.779 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 877.8059ms
+[2025-08-16 15:25:28.779 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:28.789 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 918.7275ms
+[2025-08-16 15:25:30.574 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:30.579 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:30.580 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:30.635 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:30.636 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 55.918ms
+[2025-08-16 15:25:30.636 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:30.637 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 62.5094ms
+[2025-08-16 15:25:31.825 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:31.825 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:31.825 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:31.843 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:31.844 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 18.6595ms
+[2025-08-16 15:25:31.844 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:31.845 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 19.6358ms
+[2025-08-16 15:25:32.138 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:32.138 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.139 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:32.142 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:32.143 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.047ms
+[2025-08-16 15:25:32.143 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.144 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 5.1512ms
+[2025-08-16 15:25:32.392 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:32.392 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.392 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:32.395 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:32.396 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.4392ms
+[2025-08-16 15:25:32.396 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.396 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 4.5658ms
+[2025-08-16 15:25:32.576 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:32.577 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.577 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:32.580 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:32.581 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.3762ms
+[2025-08-16 15:25:32.581 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.581 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 5.0973ms
+[2025-08-16 15:25:32.742 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:32.742 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.742 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:32.745 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:32.746 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.3091ms
+[2025-08-16 15:25:32.746 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.746 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 4.0312ms
+[2025-08-16 15:25:32.897 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:32.898 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.898 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:32.916 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:32.916 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 18.2042ms
+[2025-08-16 15:25:32.916 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:32.917 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 19.7942ms
+[2025-08-16 15:25:33.070 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:33.070 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:33.070 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:33.074 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:33.074 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.9018ms
+[2025-08-16 15:25:33.075 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:33.075 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 5.0459ms
+[2025-08-16 15:25:33.197 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product - null null
+[2025-08-16 15:25:33.198 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:33.198 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:33.201 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 15:25:33.202 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.0293ms
+[2025-08-16 15:25:33.202 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:33.202 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product - 400 null application/json 4.8129ms
+[2025-08-16 15:25:36.994 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:36.994 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:37.002 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:37.092 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:37.092 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 89.8355ms
+[2025-08-16 15:25:37.092 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:37.093 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 99.0375ms
+[2025-08-16 15:25:40.572 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:40.572 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:40.572 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:40.579 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:40.579 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 7.1557ms
+[2025-08-16 15:25:40.580 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:40.581 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 8.8235ms
+[2025-08-16 15:25:40.913 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:40.913 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:40.913 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:40.917 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:40.917 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.8515ms
+[2025-08-16 15:25:40.917 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:40.917 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 4.6061ms
+[2025-08-16 15:25:41.095 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:41.095 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.095 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:41.098 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:41.098 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.3163ms
+[2025-08-16 15:25:41.098 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.099 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 3.9489ms
+[2025-08-16 15:25:41.263 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:41.263 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.263 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:41.267 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:41.267 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.4398ms
+[2025-08-16 15:25:41.267 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.267 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 4.0923ms
+[2025-08-16 15:25:41.502 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:41.502 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.503 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:41.506 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:41.507 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.111ms
+[2025-08-16 15:25:41.507 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.507 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 5.4204ms
+[2025-08-16 15:25:41.657 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:41.657 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.657 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:41.661 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:41.662 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.7429ms
+[2025-08-16 15:25:41.662 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.662 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 5.4613ms
+[2025-08-16 15:25:41.888 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:41.888 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.888 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:41.891 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:41.892 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.6805ms
+[2025-08-16 15:25:41.892 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:41.892 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 4.2062ms
+[2025-08-16 15:25:42.055 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:42.055 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.055 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:42.058 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:42.058 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.4132ms
+[2025-08-16 15:25:42.059 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.059 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 3.9311ms
+[2025-08-16 15:25:42.229 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:42.229 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.230 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:42.234 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:42.235 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 5.3597ms
+[2025-08-16 15:25:42.235 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.235 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 6.1857ms
+[2025-08-16 15:25:42.391 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:42.391 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.391 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:42.395 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:42.395 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.8431ms
+[2025-08-16 15:25:42.395 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.395 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 4.3652ms
+[2025-08-16 15:25:42.667 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 15:25:42.667 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.667 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 15:25:42.671 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 15:25:42.671 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.2087ms
+[2025-08-16 15:25:42.671 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 15:25:42.672 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/api/Product/1 - 400 null application/json 4.9062ms
+[2025-08-16 16:22:06.039 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 16:22:06.403 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 16:22:06.404 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 16:22:06.512 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 16:22:06.512 +03:00  INF]  Hosting environment: Development
+[2025-08-16 16:22:06.512 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 16:22:07.943 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 16:22:08.273 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 334.0667ms
+[2025-08-16 16:22:08.289 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 16:22:18.968 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 16:22:18.972 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 16:22:18.994 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 16:22:20.023 +03:00  INF]  Executed DbCommand (10ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 16:22:20.396 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 16:22:20.411 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1412.339ms
+[2025-08-16 16:22:20.411 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 16:22:20.421 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 1453.0772ms
+[2025-08-16 16:22:20.601 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:22:20.604 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:20.610 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:22:20.910 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 16:22:21.020 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:22:21.027 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 416.5529ms
+[2025-08-16 16:22:21.027 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:21.027 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 426.3441ms
+[2025-08-16 16:22:41.775 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/9 - null null
+[2025-08-16 16:22:41.775 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:41.781 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:22:41.843 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:22:41.850 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:22:41.851 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 70.6417ms
+[2025-08-16 16:22:41.852 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:41.852 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/9 - 200 null application/json; charset=utf-8 80.1916ms
+[2025-08-16 16:22:54.924 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:22:54.925 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:54.926 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:22:54.960 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:22:54.961 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 35.1677ms
+[2025-08-16 16:22:54.961 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:22:54.961 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 37.0779ms
+[2025-08-16 16:23:09.883 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/9 - null null
+[2025-08-16 16:23:09.883 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:09.883 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:23:09.889 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:23:09.889 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 5.7423ms
+[2025-08-16 16:23:09.889 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:09.890 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/9 - 200 null application/json; charset=utf-8 7.3011ms
+[2025-08-16 16:23:13.016 +03:00  INF]  Request starting HTTP/1.1 PUT https://localhost:7109/api/Product - application/json; charset=utf-8 103
+[2025-08-16 16:23:13.017 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:23:13.020 +03:00  INF]  Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SecondTask.Application.Features.CQRS.Commands.ProductCommands.UpdateProductCommand) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:23:13.035 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:23:13.125 +03:00  INF]  Executed DbCommand (8ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = Decimal), @p3='?', @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Brand" = @p0, "Description" = @p1, "Price" = @p2, "ProductName" = @p3, "Status" = @p4
+WHERE "Id" = @p5;
+[2025-08-16 16:23:13.139 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2025-08-16 16:23:13.141 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi) in 120.6742ms
+[2025-08-16 16:23:13.141 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:23:13.141 +03:00  INF]  Request finished HTTP/1.1 PUT https://localhost:7109/api/Product - 200 null text/plain; charset=utf-8 124.8638ms
+[2025-08-16 16:23:13.162 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:23:13.162 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:13.162 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:23:13.167 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 16:23:13.170 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:23:13.170 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 7.8497ms
+[2025-08-16 16:23:13.170 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:13.170 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 8.609ms
+[2025-08-16 16:23:51.844 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/7 - null null
+[2025-08-16 16:23:51.845 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:51.845 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:23:51.853 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:23:51.857 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:23:51.858 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 12.4201ms
+[2025-08-16 16:23:51.858 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:23:51.858 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/7 - 200 null application/json; charset=utf-8 14.3642ms
+[2025-08-16 16:24:01.930 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:24:01.930 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:01.930 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:01.935 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:24:01.935 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 5.1427ms
+[2025-08-16 16:24:01.936 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:01.936 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 6.107ms
+[2025-08-16 16:24:03.327 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 16:24:03.327 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:03.327 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:03.332 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:24:03.335 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:24:03.335 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 7.8591ms
+[2025-08-16 16:24:03.335 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:03.335 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 8.5488ms
+[2025-08-16 16:24:06.109 +03:00  INF]  Request starting HTTP/1.1 PUT https://localhost:7109/api/Product - application/json; charset=utf-8 97
+[2025-08-16 16:24:06.110 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:24:06.110 +03:00  INF]  Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SecondTask.Application.Features.CQRS.Commands.ProductCommands.UpdateProductCommand) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:06.112 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:24:06.116 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = Decimal), @p3='?', @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Brand" = @p0, "Description" = @p1, "Price" = @p2, "ProductName" = @p3, "Status" = @p4
+WHERE "Id" = @p5;
+[2025-08-16 16:24:06.122 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2025-08-16 16:24:06.122 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi) in 12.2075ms
+[2025-08-16 16:24:06.122 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:24:06.122 +03:00  INF]  Request finished HTTP/1.1 PUT https://localhost:7109/api/Product - 200 null text/plain; charset=utf-8 12.9127ms
+[2025-08-16 16:24:06.138 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:24:06.139 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:06.139 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:06.142 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 16:24:06.144 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:24:06.145 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 5.8349ms
+[2025-08-16 16:24:06.145 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:06.145 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 6.612ms
+[2025-08-16 16:24:40.332 +03:00  INF]  User profile is available. Using 'C:\Users\muazc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-08-16 16:24:40.688 +03:00  INF]  Now listening on: https://localhost:7109
+[2025-08-16 16:24:40.689 +03:00  INF]  Now listening on: http://localhost:5031
+[2025-08-16 16:24:40.806 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2025-08-16 16:24:40.806 +03:00  INF]  Hosting environment: Development
+[2025-08-16 16:24:40.806 +03:00  INF]  Content root path: C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi
+[2025-08-16 16:24:41.519 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7109/ - null null
+[2025-08-16 16:24:41.724 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7109/ - 404 0 null 209.4753ms
+[2025-08-16 16:24:41.738 +03:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/, Response status code: 404
+[2025-08-16 16:24:47.890 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7109/api/Login - application/json; charset=utf-8 38
+[2025-08-16 16:24:47.895 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 16:24:47.919 +03:00  INF]  Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(SecondTask.Application.Features.CQRS.Queries.UserQueries.GetCheckUserQuery) on controller SecondTask.WebApi.Controllers.LoginController (SecondTask.WebApi).
+[2025-08-16 16:24:48.853 +03:00  INF]  Executed DbCommand (13ms) [Parameters=[@__query_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Name", u."Password", u."Surname", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__query_Username_0
+LIMIT 2
+[2025-08-16 16:24:49.232 +03:00  INF]  Executing CreatedResult, writing value of type 'SecondTask.Application.Dtos.TokenResponseDto'.
+[2025-08-16 16:24:49.248 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi) in 1326.283ms
+[2025-08-16 16:24:49.249 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.LoginController.Index (SecondTask.WebApi)'
+[2025-08-16 16:24:49.260 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7109/api/Login - 201 null application/json; charset=utf-8 1369.656ms
+[2025-08-16 16:24:49.448 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:24:49.451 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:49.455 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:49.722 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:24:49.729 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 273.7895ms
+[2025-08-16 16:24:49.729 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:49.729 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 281.385ms
+[2025-08-16 16:24:54.453 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/1 - null null
+[2025-08-16 16:24:54.454 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:54.459 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:54.543 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:24:54.589 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:24:54.591 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 131.2676ms
+[2025-08-16 16:24:54.591 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:54.591 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/1 - 200 null application/json; charset=utf-8 138.0371ms
+[2025-08-16 16:24:58.906 +03:00  INF]  Request starting HTTP/1.1 PUT https://localhost:7109/api/Product - application/json; charset=utf-8 101
+[2025-08-16 16:24:58.906 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:24:58.910 +03:00  INF]  Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SecondTask.Application.Features.CQRS.Commands.ProductCommands.UpdateProductCommand) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:58.935 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:24:59.008 +03:00  INF]  Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = Decimal), @p3='?', @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Brand" = @p0, "Description" = @p1, "Price" = @p2, "ProductName" = @p3, "Status" = @p4
+WHERE "Id" = @p5;
+[2025-08-16 16:24:59.022 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2025-08-16 16:24:59.022 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi) in 111.9754ms
+[2025-08-16 16:24:59.022 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:24:59.023 +03:00  INF]  Request finished HTTP/1.1 PUT https://localhost:7109/api/Product - 200 null text/plain; charset=utf-8 116.8423ms
+[2025-08-16 16:24:59.041 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:24:59.042 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:59.042 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:24:59.055 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 16:24:59.062 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:24:59.062 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 19.9096ms
+[2025-08-16 16:24:59.062 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:24:59.062 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 20.8687ms
+[2025-08-16 16:25:00.130 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/4 - null null
+[2025-08-16 16:25:00.131 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:00.131 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:25:00.134 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:25:00.137 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:25:00.137 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 6.54ms
+[2025-08-16 16:25:00.137 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:00.138 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/4 - 200 null application/json; charset=utf-8 7.9427ms
+[2025-08-16 16:25:00.784 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:25:00.784 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:00.784 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:25:00.787 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:25:00.788 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 3.6198ms
+[2025-08-16 16:25:00.788 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:00.789 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 5.1004ms
+[2025-08-16 16:25:01.716 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product/7 - null null
+[2025-08-16 16:25:01.717 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:01.717 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList(Int32) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:25:01.721 +03:00  INF]  Executing OkObjectResult, writing value of type 'SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductByIdQueryResult'.
+[2025-08-16 16:25:01.721 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 4.5266ms
+[2025-08-16 16:25:01.721 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:01.722 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product/7 - 200 null application/json; charset=utf-8 5.1681ms
+[2025-08-16 16:25:03.505 +03:00  INF]  Request starting HTTP/1.1 PUT https://localhost:7109/api/Product - application/json; charset=utf-8 106
+[2025-08-16 16:25:03.506 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:25:03.506 +03:00  INF]  Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SecondTask.Application.Features.CQRS.Commands.ProductCommands.UpdateProductCommand) on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:25:03.509 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+[2025-08-16 16:25:03.512 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = Decimal), @p3='?', @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Brand" = @p0, "Description" = @p1, "Price" = @p2, "ProductName" = @p3, "Status" = @p4
+WHERE "Id" = @p5;
+[2025-08-16 16:25:03.516 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2025-08-16 16:25:03.517 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi) in 10.5828ms
+[2025-08-16 16:25:03.517 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.UpdateProduct (SecondTask.WebApi)'
+[2025-08-16 16:25:03.517 +03:00  INF]  Request finished HTTP/1.1 PUT https://localhost:7109/api/Product - 200 null text/plain; charset=utf-8 11.7005ms
+[2025-08-16 16:25:03.536 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7109/api/Product - null null
+[2025-08-16 16:25:03.536 +03:00  INF]  Executing endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:03.536 +03:00  INF]  Route matched with {action = "GetProductList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductList() on controller SecondTask.WebApi.Controllers.ProductController (SecondTask.WebApi).
+[2025-08-16 16:25:03.540 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Brand", p."Description", p."Price", p."ProductName", p."Status"
+FROM "Products" AS p
+[2025-08-16 16:25:03.542 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SecondTask.Application.Features.CQRS.Results.ProductResults.GetProductQueryResult, SecondTask.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-08-16 16:25:03.542 +03:00  INF]  Executed action SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi) in 6.4379ms
+[2025-08-16 16:25:03.542 +03:00  INF]  Executed endpoint 'SecondTask.WebApi.Controllers.ProductController.GetProductList (SecondTask.WebApi)'
+[2025-08-16 16:25:03.543 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7109/api/Product - 200 null application/json; charset=utf-8 7.0849ms

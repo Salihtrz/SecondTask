@@ -1,0 +1,82 @@
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    /* Mobilde sidebar gizli */
+    z-index: 999;
+    /* Sidebar'ın z-index değerini artırıyoruz */
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+    /* Mobilde açıldığında göster */
+  }
+
+  .sidebar-search {
+    display: none;
+    /* Arama çubuğunu mobilde gizle */
+  }
+
+  .sidebar-nav .nav-item a {
+    font-size: 16px;
+    /* Mobilde font boyutunu büyüt */
+  }
+
+  .sidebar-logo {
+    margin-top: 20px;
+  }
+
+  .navbar-search {
+    display: none;
+    /* Arama çubuğunu mobilde gizle */
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-logo img {
+    height: 30px;
+  }
+
+  .navbar-icons .icon {
+    font-size: 24px;
+    margin-left: 15px;
+  }
+
+  .navbar {
+    padding: 10px;
+    /* Mobilde paddingi daralt */
+  }
+
+  .video-detail {
+    margin-left: 0;
+  }
+
+  .video-slide {
+    width: 250px;
+    /* Daha küçük ekranlar için videoları küçültüyoruz */
+  }
+
+  .video-slider-container {
+    width: calc(250px * 3 + 10px * 2);
+  }
+
+  .editaccount-grid-keywords input {
+    font-size: 14px;
+    height: 25px;
+  }
+}
