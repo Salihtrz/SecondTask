@@ -3,11 +3,11 @@
     "Name": "All",
     "Projects": [
       {
-        "Path": "SecondTask.WebUI\\SecondTask.WebUI.csproj",
+        "Path": "Frontends\\SecondTask.WebUI\\SecondTask.WebUI.csproj",
         "Action": "Start"
       },
       {
-        "Path": "SecondTask.WebApi\\SecondTask.WebApi.csproj",
+        "Path": "Presentation\\SecondTask.WebApi\\SecondTask.WebApi.csproj",
         "Action": "Start"
       }
     ]
