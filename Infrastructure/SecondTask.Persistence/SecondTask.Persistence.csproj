@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SecondTask.Application\SecondTask.Application.csproj" />
-    <ProjectReference Include="..\SecondTask.Domain\SecondTask.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\SecondTask.Application\SecondTask.Application.csproj" />
+    <ProjectReference Include="..\..\Core\SecondTask.Domain\SecondTask.Domain.csproj" />
   </ItemGroup>
 
 </Project>

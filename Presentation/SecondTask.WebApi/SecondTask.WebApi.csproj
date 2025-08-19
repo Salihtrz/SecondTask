@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SecondTask.Application\SecondTask.Application.csproj" />
-    <ProjectReference Include="..\SecondTask.Domain\SecondTask.Domain.csproj" />
-    <ProjectReference Include="..\SecondTask.Persistence\SecondTask.Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\SecondTask.Application\SecondTask.Application.csproj" />
+    <ProjectReference Include="..\..\Core\SecondTask.Domain\SecondTask.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SecondTask.Persistence\SecondTask.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

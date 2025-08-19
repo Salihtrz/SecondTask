@@ -165,3 +165,6 @@ C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\S
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\SecondTask\SecondTask.WebApi\bin\Debug\net9.0\Serilog.Sinks.PostgreSQL.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\Presentation\SecondTask.WebApi\obj\Debug\net9.0\SecondTask.WebApi.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\Presentation\SecondTask.WebApi\obj\Debug\net9.0\refint\SecondTask.WebApi.dll
+C:\Users\muazc\OneDrive\Masaüstü\Proje ve Çalışmalarım\GitHub\SecondTask\Presentation\SecondTask.WebApi\obj\Debug\net9.0\SecondTask.WebApi.pdb
