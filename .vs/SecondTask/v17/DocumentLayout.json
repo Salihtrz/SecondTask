@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F51F23C-A963-4C91-B0F7-311CBA9147A4}|Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\infrastructure\\secondtask.persistence\\secondtask.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3F51F23C-A963-4C91-B0F7-311CBA9147A4}|Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj|solutionrelative:infrastructure\\secondtask.persistence\\secondtask.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{760358EA-E1DD-4DB6-8FA2-E98CD4D6F970}|Presentation\\SecondTask.WebApi\\SecondTask.WebApi.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\presentation\\secondtask.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{760358EA-E1DD-4DB6-8FA2-E98CD4D6F970}|Presentation\\SecondTask.WebApi\\SecondTask.WebApi.csproj|solutionrelative:presentation\\secondtask.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405BBC5-A5EE-4325-8544-1C5B116B82AF}|Frontends\\SecondTask.WebUI\\SecondTask.WebUI.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\frontends\\secondtask.webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C405BBC5-A5EE-4325-8544-1C5B116B82AF}|Frontends\\SecondTask.WebUI\\SecondTask.WebUI.csproj|solutionrelative:frontends\\secondtask.webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405BBC5-A5EE-4325-8544-1C5B116B82AF}|Frontends\\SecondTask.WebUI\\SecondTask.WebUI.csproj|c:\\users\\muazc\\onedrive\\masa\u00FCst\u00FC\\proje ve \u00E7al\u0131\u015Fmalar\u0131m\\github\\secondtask\\frontends\\secondtask.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C405BBC5-A5EE-4325-8544-1C5B116B82AF}|Frontends\\SecondTask.WebUI\\SecondTask.WebUI.csproj|solutionrelative:frontends\\secondtask.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +34,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Frontends\\SecondTask.WebUI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Frontends\\SecondTask.WebUI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Frontends\\SecondTask.WebUI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Frontends\\SecondTask.WebUI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wB4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:42:11.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Frontends\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Frontends\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Frontends\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Frontends\\SecondTask.WebUI\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:41:57.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SecondTask.Persistence",
-              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj",
-              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj",
-              "RelativeToolTip": "Infrastructure\\SecondTask.Persistence\\SecondTask.Persistence.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T13:18:21.008Z",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Presentation\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Presentation\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\muazc\\OneDrive\\Masa\u00FCst\u00FC\\Proje ve \u00C7al\u0131\u015Fmalar\u0131m\\GitHub\\SecondTask\\Presentation\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Presentation\\SecondTask.WebApi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:41:51.603Z",
               "EditorCaption": ""
             }
           ]
